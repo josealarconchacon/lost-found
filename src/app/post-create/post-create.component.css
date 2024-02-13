@@ -1,0 +1,9 @@
+mat-form-field,
+textarea {
+  width: 100%;
+}
+
+.example-button-row {
+  max-width: 600px;
+  margin: 8px 18px 8px 10px;
+}
