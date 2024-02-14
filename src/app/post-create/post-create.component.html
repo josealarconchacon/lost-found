@@ -1,7 +1,10 @@
 <!-- <textarea rows="10" [(ngModel)]="enterPostValue"></textarea> <br /> -->
 <mat-card>
   <mat-form-field>
-    <textarea matInput row="6" [(ngModel)]="enterPostValue"></textarea>
+    <input matInput type="text" [(ngModel)]="enterTitle" />
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput row="6" [(ngModel)]="enterContent"></textarea>
   </mat-form-field>
   <div class="example-button-row">
     <button mat-raised-button color="primary" (click)="onPost()">Post</button
