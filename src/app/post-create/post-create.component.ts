@@ -11,6 +11,7 @@ export class PostCreateComponent implements OnInit {
   // properties
   enterTitle: string = '';
   enterContent: string = '';
+  dialog: any;
 
   constructor(public postService: PostsService) {}
 
@@ -19,5 +20,6 @@ export class PostCreateComponent implements OnInit {
   onPost(form: NgForm) {
     if (form.invalid) return false;
     this.postService.onAddPost(form.value.title, form.value.content);
+    form.reset();
   }
 }
